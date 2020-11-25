@@ -1,47 +1,213 @@
+:root {
+  --dark-backround: #2f303a;
+  --blue-logo: #2196f3;
+  --white-logo: white;
+  --black-logo: black;
+  --button-color: #2196f3;
+  --button-text-color: white;
+  --dark-text: #212121;
+  --blue-text: #2196f3;
+  --grey-text: #757575;
+}
+
+.footer {
+  color: white;
+  background: var(--dark-backround);
+}
+
+.footer_link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.list_without_dot {
+    list-style-type: none;
+}
+
 .navigation {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.333;
-    letter-spacing: 0.02em;
-}
-.navigation-list-item{
-    color: #212121;;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
-.navigation-list-item:hover,
-.navigation-list-item:focus {
-    color: #2196F3;
+.navigation-list-item {
+  color: var(--dark-text);
+  text-decoration: none;
 }
 
-.header-mail{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.333;
-    letter-spacing: 0.02em;
-    color: #2196F3;
+.navigation-list-item-selected {
+  color: var(--blue-text);
+  text-decoration: none;
 }
-.header-phone{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.333;
-    letter-spacing: 0.02em;
-    color: #757575;
+
+.header-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+  color: var(--blue-text);
+}
+.header-phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .logo {
-    font-style: bold;
+  font-size: 26px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.logo-accent1{
-    color: #2196F3;
-}
-.logo-accent2{
-    color: black;
+.logo_header,
+.logo_header:visited {
+  font-style: bold;
+  font-size: 26px;
+  color: black;
 }
 
+.logo_footer,
+.logo_footer:visited {
+  font-style: bold;
+  color: white;
+}
+
+.logo-blue {
+  color: var(--blue-logo);
+}
+
+.main_page_top {
+  background: var(--dark-backround);
+  color: white;
+}
+
+.caption {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order_service_button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+.porfolio_button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.porfolio_active_button {
+  color: white;
+  background-color: var(--button-color);
+}
+
+/* our_features */
+
+.our_features_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-text);
+}
+
+.our_features_description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+/* ABOUT */
+
+.about_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-text);
+}
+
+.about_item_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-text);
+}
+
+.about_item_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.product_item_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--dark-text);
+}
+
+.product_item_type {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
