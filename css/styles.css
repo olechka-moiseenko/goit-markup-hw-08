@@ -10,6 +10,11 @@
   --grey-text: #757575;
 }
 
+body {
+    font-family: Roboto;
+    font-style: normal;
+}
+
 .footer {
   color: white;
   background: var(--dark-backround);
@@ -24,8 +29,6 @@
 }
 
 .navigation {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -43,8 +46,6 @@
 }
 
 .header-mail {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
@@ -52,19 +53,16 @@
   color: var(--blue-text);
 }
 .header-phone {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 .logo {
   font-size: 26px;
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -74,14 +72,11 @@
 
 .logo_header,
 .logo_header:visited {
-  font-style: bold;
-  font-size: 26px;
   color: black;
 }
 
 .logo_footer,
 .logo_footer:visited {
-  font-style: bold;
   color: white;
 }
 
@@ -95,8 +90,6 @@
 }
 
 .caption {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -106,8 +99,6 @@
 }
 
 .order_service_button {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -120,8 +111,6 @@
 }
 
 .porfolio_button {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -137,8 +126,6 @@
 /* our_features */
 
 .our_features_header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1, 142;
@@ -148,9 +135,6 @@
 }
 
 .our_features_description {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -160,8 +144,6 @@
 /* ABOUT */
 
 .about_header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -171,8 +153,6 @@
 }
 
 .about_item_header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -182,19 +162,13 @@
 }
 
 .about_item_text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .product_item_header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
@@ -203,9 +177,6 @@
 }
 
 .product_item_type {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
