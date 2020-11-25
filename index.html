@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Studio (Version 2.0)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,700;1,400&display=swap"
+   rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="/">WebStudio</a>
-      <a href="pages/studio.html">Студия</a>
-      <a href="pages/portfolio.html">Портфолио</a>
-      <a href="pages/contacts.html">Контакты</a>
+  <header class="header">
+    <nav class="navigation">
+      <a class="logo" href="/"><span class="logo-accent1">Web</span><span class="logo-accent2">Studio</span></a>
+      <a class="navigation-list-item" href="pages/studio.html">Студия</a>
+      <a class="navigation-list-item" href="pages/portfolio.html">Портфолио</a>
+      <a class="navigation-list-item" href="pages/contacts.html">Контакты</a>
     </nav>
-    <ul>
+    <ul class="adress">
       <li>
-        <a href="info@devstudio.com">info@devstudio.com></a>
+        <a class="header-mail" href="info@devstudio.com">info@devstudio.com></a>
       </li>
       <li>
-        <a href="+380961111111">+380961111111</a>
+        <a class="header-phone" href="+380961111111">+380961111111</a>
       </li>
     </ul>
   </header>
   <section>
     <h1>Эффективные решения для вашего бизнеса</h1>
     <button type="button">Заказать услугу</button>
-    <h2 hidden>Наши особенности
-      <!-- To supress headers structure warning -->
-    </h2>
+    <h2 hidden>Наши особенности</h2>
     <ul>
       <li>
         <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -90,7 +90,7 @@
     </ul>
   </section>
   <footer>
-    <a href="/">Webstudio</a>
+    <a class="logo" href="/"><span class="logo-accent1">Web</span><span class="logo-accent2">Studio</span></a>
     <address>
       <p>г. Киев, пр-т Леси Украинки, 26</p>
       <a href="info@example.com">info@example.com</a><br />
