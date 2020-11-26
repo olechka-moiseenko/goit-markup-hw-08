@@ -16,17 +16,26 @@ body {
     font-style: normal;
 }
 
+ul {
+  list-style: none;
+}
+
 .footer {
   color: white;
   background: var(--dark-backround);
 }
 
-.footer_link {
-  color: rgba(255, 255, 255, 0.6);
+.footer_address {
+  font-style: normal;
 }
 
-.list_without_dot {
-    list-style-type: none;
+.footer_link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer_link:hover, .footer_link:focus {
+  color: var(--blue-text);
 }
 
 .navigation {
@@ -46,19 +55,17 @@ body {
   text-decoration: none;
 }
 
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.333;
-  letter-spacing: 0.02em;
+.header-link:hover, .header-link:focus {
   color: var(--blue-text);
 }
-.header-phone {
+
+.header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
   letter-spacing: 0.02em;
   color: var(--grey-text);
+  text-decoration: none;
 }
 
 .logo {
@@ -124,7 +131,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.porfolio_active_button {
+.porfolio_button:hover, .porfolio_button:focus {
   color: white;
   background-color: var(--button-color);
 }
