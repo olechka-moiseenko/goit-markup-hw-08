@@ -4,7 +4,7 @@
   --white-logo: white;
   --black-logo: black;
   --button-color: #2196f3;
-  --button-color-inactive: #F5F4FA;
+  --button-color-inactive: #f5f4fa;
   --button-text-color: white;
   --dark-text: #212121;
   --blue-text: #2196f3;
@@ -14,31 +14,32 @@
 }
 
 body {
-    font-family: var(--document-font);
-    font-style: normal;
+  font-family: var(--document-font);
+  font-style: normal;
 }
 
-h1
-h2
-h3
-h4
-h5
-h6{
-  margin:0;
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
 }
 
 ul,
-ol{
-  margin:0;
-  padding:0;
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-p{
-  margin:0;
+p {
+  margin: 0;
 }
 
 ul {
   list-style: none;
+  display: flex;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -56,13 +57,15 @@ ul {
   text-decoration: none;
 }
 
-.footer_link:hover, .footer_link:focus {
+.footer_link:hover,
+.footer_link:focus {
   color: var(--blue-text);
 }
 
-.header{
-  display:flex;
-  align-items:center;
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
 }
 
 .navigation {
@@ -75,14 +78,15 @@ ul {
 .navigation-list-item {
   color: var(--dark-text);
   text-decoration: none;
+  margin-right: 50px;
 }
 
 .navigation-list-item-selected {
   color: var(--blue-text);
-  text-decoration: none;
 }
 
-.header-link:hover, .header-link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--blue-text);
 }
 
@@ -93,13 +97,19 @@ ul {
   letter-spacing: 0.02em;
   color: var(--grey-text);
   text-decoration: none;
+  margin-right: 50px;
+}
+
+.right-aligment {
+  margin-left: auto;
+  margin-right: 183px;
 }
 
 .logo {
   font-size: 26px;
   font-family: var(--logo-font);
   font-weight: bold;
-  line-height: 1,192;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -107,6 +117,8 @@ ul {
 .logo_header,
 .logo_header:visited {
   color: black;
+  margin-right: 93px;
+  margin-top: 24px;
 }
 
 .logo_footer,
@@ -126,7 +138,7 @@ ul {
 .caption {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1,364;
+  line-height: 1, 364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -136,7 +148,7 @@ ul {
   font-family: var(--document-font);
   font-weight: bold;
   font-size: 16px;
-  line-height: 1,875;
+  line-height: 1, 875;
   display: flex;
   align-items: center;
   text-align: center;
@@ -148,17 +160,19 @@ ul {
 .porfolio_button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,625;
+  line-height: 1, 625;
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
   padding: 0;
   background-color: var(--button-color-inactive);
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.porfolio_button:hover, .porfolio_button:focus {
+.porfolio_button:hover,
+.porfolio_button:focus {
   color: white;
   background-color: var(--button-color);
 }
@@ -168,7 +182,7 @@ ul {
 .our_features_header {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1,143;
+  line-height: 1, 143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-text);
@@ -177,7 +191,7 @@ ul {
 .our_features_description {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1,143;
+  line-height: 1, 143;
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
@@ -187,7 +201,7 @@ ul {
 .about_header {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1,167;
+  line-height: 1, 167;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
@@ -196,7 +210,7 @@ ul {
 .about_item_header {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,187;
+  line-height: 1, 187;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
@@ -204,7 +218,7 @@ ul {
 
 .about_item_text {
   font-size: 16px;
-  line-height: 1,187;
+  line-height: 1, 187;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -219,7 +233,7 @@ ul {
 
 .product_item_type {
   font-size: 16px;
-  line-height: 1,875;
+  line-height: 1, 875;
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
