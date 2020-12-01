@@ -9,10 +9,12 @@
   --dark-text: #212121;
   --blue-text: #2196f3;
   --grey-text: #757575;
+  --document-font: Roboto;
+  --logo-font: Raleway;
 }
 
 body {
-    font-family: Roboto;
+    font-family: var(--document-font);
     font-style: normal;
 }
 
@@ -27,6 +29,7 @@ ul {
 
 .footer_address {
   font-style: normal;
+  font-weight: normal;
 }
 
 .footer_link {
@@ -41,7 +44,7 @@ ul {
 .navigation {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.143;
   letter-spacing: 0.02em;
 }
 
@@ -62,7 +65,7 @@ ul {
 .header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.333;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--grey-text);
   text-decoration: none;
@@ -70,10 +73,9 @@ ul {
 
 .logo {
   font-size: 26px;
-  font-family: Raleway;
+  font-family: var(--logo-font);
   font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
+  line-height: 1,192;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -100,16 +102,17 @@ ul {
 .caption {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1,364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .order_service_button {
+  font-family: var(--document-font);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1,875;
   display: flex;
   align-items: center;
   text-align: center;
@@ -121,7 +124,7 @@ ul {
 .porfolio_button {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1,625;
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
@@ -141,15 +144,16 @@ ul {
 .our_features_header {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 142;
+  line-height: 1,143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-text);
 }
 
 .our_features_description {
+  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1,143;
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
@@ -159,7 +163,7 @@ ul {
 .about_header {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1,167;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
@@ -168,7 +172,7 @@ ul {
 .about_item_header {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1,187;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
@@ -176,14 +180,14 @@ ul {
 
 .about_item_text {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1,187;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .product_item_header {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--dark-text);
@@ -191,7 +195,7 @@ ul {
 
 .product_item_type {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1,875;
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
