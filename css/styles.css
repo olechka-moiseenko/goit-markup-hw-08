@@ -320,6 +320,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 94px;
 }
 
 .portfolio_items > li {
