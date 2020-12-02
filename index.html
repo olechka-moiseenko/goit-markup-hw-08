@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
+  <div class="container">
+    <header class="header">
       <nav class="navigation">
         <a class="logo logo_header" href="./">
           <span class="logo-blue">Web</span>Studio
@@ -24,98 +24,101 @@
         <a class="navigation-list-item" href="pages/portfolio.html">Портфолио</a>
         <a class="navigation-list-item" href="pages/contacts.html">Контакты</a>
       </nav>
-      <address class="right-aligment">
+      <address class="header-contacts">
         <a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a class="header-link" href="tel:+380961111111">+380961111111</a>
       </address>
+    </header>
+    <section class="main_page_top">
+      <h1 class="caption">Эффективные решения для вашего бизнеса</h1>
+      <button type="button" class="order_service_button">Заказать услугу</button>
+    </section>
+    <div class="content_block">
+      <section>
+        <h2 hidden>Наши особенности</h2>
+        <ul class="content_block_items our_features">
+          <li>
+            <h3 class="our_features_header">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+            <p class="our_features_description">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li>
+            <h3 class="our_features_header">ПУНКТУАЛЬНОСТЬ</h3>
+            <p class="our_features_description">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li>
+            <h3 class="our_features_header">ПЛАНИРОВАНИЕ</h3>
+            <p class="our_features_description">
+              Равным образом консультация с широким активом в значительной степени
+              обуславливает
+            </p>
+          </li>
+          <li>
+            <h3 class="our_features_header">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+            <p class="our_features_description">
+              Значимость этих проблем настолько очевидна, что реализация плановых
+              заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!--ABOUT-->
+      <section>
+        <h2 class="about_header">Чем мы занимаемся</h2>
+        <ul class="content_block_items">
+          <li>
+            <img src="images/writing_code.jpg" alt="Набор кода" width="370" height="294" />
+          </li>
+          <li>
+            <img src="images/creation_app_for_phone.jpg" alt="Создание приложений для телефонов" width="370"
+              height="294" />
+          </li>
+          <li>
+            <img src="images/design_of_app.jpg" alt="Дизайн приложений" width="370" height="294" />
+          </li>
+        </ul>
+      </section>
     </div>
-  </header>
-  <section class="main_page_top">
-    <h1 class="caption">Эффективные решения для вашего бизнеса</h1>
-    <button type="button" class="order_service_button" button>
-  </section>
-  <section>
-    <h2 hidden>Наши особенности</h2>
-    <ul>
-      <li>
-        <h3 class="our_features_header">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-        <p class="our_features_description">
-          Идейные соображения, а также начало повседневной работы по
-          формированию позиции.
-        </p>
-      </li>
-      <li>
-        <h3 class="our_features_header">ПУНКТУАЛЬНОСТЬ</h3>
-        <p class="our_features_description">
-          Задача организации, в особенности же рамки и место обучения кадров
-          влечет за собой.
-        </p>
-      </li>
-      <li>
-        <h3 class="our_features_header">ПЛАНИРОВАНИЕ</h3>
-        <p class="our_features_description">
-          Равным образом консультация с широким активом в значительной степени
-          обуславливает
-        </p>
-      </li>
-      <li>
-        <h3 class="our_features_header">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-        <p class="our_features_description">
-          Значимость этих проблем настолько очевидна, что реализация плановых
-          заданий.
-        </p>
-      </li>
-    </ul>
-  </section>
-  <!--ABOUT-->
-  <section>
-    <h2 class="about_header">Чем мы занимаемся</h2>
-    <ul>
-      <li>
-        <img src="images/writing_code.jpg" alt="Набор кода" width="370" height="294" />
-      </li>
-      <li>
-        <img src="images/creation_app_for_phone.jpg" alt="Создание приложений для телефонов" width="370" height="294" />
-      </li>
-      <li>
-        <img src="images/design_of_app.jpg" alt="Дизайн приложений" width="370" height="294" />
-      </li>
-    </ul>
-  </section>
-  <!--Наша команда-->
-  <section>
-    <h2 class="about_header">Наша команда</h2>
-    <ul>
-      <li>
-        <img src="images/productdesigner.jpg" alt="Product Designer" width="270" height="260" />
-        <h3 class="about_item_header">Игорь Демьяненко</h3>
-        <p class="about_item_text">Product Designer</p>
-      </li>
-      <li>
-        <img src="images/frontenddeveloper.jpg" alt="Frontend Developer" width="270" height="260" />
-        <h3 class="about_item_header">Ольга Репина</h3>
-        <p class="about_item_text">Frontend Developer</p>
-      </li>
-      <li>
-        <img src="images/marketing.jpg" alt="Marketing" width="270" height="260" />
-        <h3 class="about_item_header">Николай Тарасов</h3>
-        <p class="about_item_text">Marketing</p>
-      </li>
-      <li>
-        <img src="images/uidesigner.jpg" alt="UI Designer" width="270" height="260" />
-        <h3 class="about_item_header">Михаил Ермаков</h3>
-        <p class="about_item_text">UI Designer</p>
-      </li>
-    </ul>
-  </section>
-  <footer class="footer">
-    <a class="logo logo_footer" href="/"><span class="logo-blue">Web</span>Studio</a>
-    <address class="footer_address">
-      <p>г. Киев, пр-т Леси Украинки, 26</p>
-      <a href="mailto:info@example.com" class="footer_link">info@example.com</a><br />
-      <a href="tel:+380991111111" class="footer_link">+38 099 111 11 11</a>
-    </address>
-  </footer>
+    <!--Наша команда-->
+    <section class="about_us">
+      <h2 class="about_header">Наша команда</h2>
+      <ul class="content_block content_block_items about_us_items">
+        <li>
+          <img src="images/productdesigner.jpg" alt="Product Designer" />
+          <h3 class="about_item_header">Игорь Демьяненко</h3>
+          <p class="about_item_text">Product Designer</p>
+        </li>
+        <li>
+          <img src="images/frontenddeveloper.jpg" alt="Frontend Developer" />
+          <h3 class="about_item_header">Ольга Репина</h3>
+          <p class="about_item_text">Frontend Developer</p>
+        </li>
+        <li>
+          <img src="images/marketing.jpg" alt="Marketing" />
+          <h3 class="about_item_header">Николай Тарасов</h3>
+          <p class="about_item_text">Marketing</p>
+        </li>
+        <li>
+          <img src="images/uidesigner.jpg" alt="UI Designer" />
+          <h3 class="about_item_header">Михаил Ермаков</h3>
+          <p class="about_item_text">UI Designer</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <a class="logo footer_logo" href="/"><span class="logo-blue">Web</span>Studio</a>
+      <address class="footer_address">
+        <p>г. Киев, пр-т Леси Украинки, 26</p>
+        <a href="mailto:info@example.com" class="footer_link">info@example.com</a>
+        <a href="tel:+380991111111" class="footer_link">+38 099 111 11 11</a>
+      </address>
+    </footer>
+  </div>
 </body>
 
 </html>
