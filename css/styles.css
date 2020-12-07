@@ -1,6 +1,5 @@
 :root {
-  --common-backgound-color: #e5e5e5;
-  --container-backgound-color: white;
+  --common-backgound-color: white;
   --dark-backround: #2f303a;
   --blue-logo: #2196f3;
   --white-logo: white;
@@ -48,7 +47,6 @@ ul {
 .container {
   margin: 0 auto;
   width: 1600px;
-  background-color: var(--container-backgound-color);
 }
 
 .footer {
@@ -228,9 +226,7 @@ ul {
 
 .content_block {
   width: 1170px;
-  margin-left: 215px;
-  margin-right: 215px;
-  /* margin-top: 94px; */
+  display: block;
 }
 
 .content_block_items {
@@ -327,8 +323,8 @@ ul {
   margin-top: 30px;
   width: 370px;
   height: 404px;
-  left: 215px;
-  top: 262px;
+  /* left: 215px;
+  top: 262px; */
   background: white;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
