@@ -120,8 +120,6 @@ ul {
 
 .header-contacts {
   margin-right: 215px;
-  /* margin-left: auto; */
-  /* width: 403px; */
   align-items: center;
   justify-content: flex-end;
   display: flex;
@@ -141,7 +139,6 @@ ul {
   color: var(--grey-text);
   text-decoration: none;
   margin-left: 50px;
-  /* margin-top: 32px; */
 }
 
 .logo {
@@ -158,7 +155,6 @@ ul {
   color: black;
   margin-right: 93px;
   margin-left: 215px;
-  /* margin-top: 24px; */
 }
 
 .logo-blue {
