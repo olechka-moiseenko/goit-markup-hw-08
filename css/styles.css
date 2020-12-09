@@ -1,6 +1,7 @@
 :root {
   --common-backgound-color: white;
   --dark-backround: #2f303a;
+  --grey-backround: #f5f4fa;
   --blue-logo: #2196f3;
   --white-logo: white;
   --black-logo: black;
@@ -18,6 +19,7 @@ body {
   font-family: var(--document-font);
   font-style: normal;
   background-color: var(--common-backgound-color);
+  margin: 0;
 }
 
 h1,
@@ -52,7 +54,7 @@ ul {
 .footer {
   color: white;
   background: var(--dark-backround);
-  height: 252px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,8 +89,9 @@ ul {
 .header {
   display: flex;
   margin: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
   display: flex;
-  height: 80px;
   width: 100%;
   justify-content: space-between;
 }
@@ -163,12 +166,12 @@ ul {
 
 .main_page_top {
   background: var(--dark-backround);
+  padding: 200px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
 }
 
 .caption {
@@ -182,9 +185,13 @@ ul {
 }
 
 .order_service_button {
-  width: 200px;
-  height: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: var(--document-font);
   font-weight: bold;
   font-size: 16px;
@@ -284,14 +291,14 @@ ul {
 
 .about_us {
   height: 648px;
-  background-color: #f5f4fa;
+  background-color: var(--grey-backround);
   margin-top: 94px;
 }
 
 .about_us_items > li {
   width: 270px;
   height: 368px;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -347,5 +354,5 @@ ul {
 
 .portfolio_items > ul > li > img {
   width: 370;
-  height: 294;
+  :294 ;
 }
