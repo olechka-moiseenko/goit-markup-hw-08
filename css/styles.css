@@ -55,6 +55,7 @@ ul {
   color: white;
   background: var(--dark-backround);
   padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,9 +90,9 @@ ul {
 .header {
   display: flex;
   margin: 0;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
-  display: flex;
   width: 100%;
   justify-content: space-between;
 }
@@ -166,8 +167,8 @@ ul {
 
 .main_page_top {
   background: var(--dark-backround);
-  padding: 200px;
   color: white;
+  padding: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,6 +200,7 @@ ul {
   letter-spacing: 0.06em;
   background-color: var(--button-color-blue);
   color: var(--button-text-color);
+  margin-top: 40px;
 }
 
 .porfolio_button {
@@ -243,7 +245,7 @@ ul {
   width: 270px;
 }
 
-.our_features_header {
+.our_features > li > h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -252,7 +254,7 @@ ul {
   color: var(--dark-text);
 }
 
-.our_features_description {
+.our_features > li > p {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -273,40 +275,43 @@ ul {
   padding-top: 94px;
 }
 
-.about_item_header {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--dark-text);
-}
-
-.about_item_text {
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .about_us {
-  height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--grey-backround);
   margin-top: 94px;
 }
 
 .about_us_items > li {
   width: 270px;
-  height: 368px;
   background: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.about_us_items > li > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-text);
+  margin-top: 30px;
+}
+
+.about_us_items > li > p {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .about_us_items > li > img {
   width: 270px;
-  height: 260px;
 }
 
 .portfolio_filter {
@@ -326,8 +331,6 @@ ul {
   margin-top: 30px;
   width: 370px;
   height: 404px;
-  /* left: 215px;
-  top: 262px; */
   background: white;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -354,5 +357,4 @@ ul {
 
 .portfolio_items > ul > li > img {
   width: 370;
-  :294 ;
 }
