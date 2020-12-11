@@ -261,6 +261,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--grey-text);
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* ABOUT */
