@@ -190,8 +190,21 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 .caption {
   width: 696px;
   font-weight: 900;
@@ -257,6 +270,15 @@ ul {
   padding-top: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.content_block_items: :before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* our_features */
