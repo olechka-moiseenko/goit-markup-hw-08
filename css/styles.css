@@ -13,6 +13,7 @@
   --grey-text: #757575;
   --document-font: Roboto;
   --logo-font: Raleway;
+  --accent-color: #2196f3;
 }
 
 body {
@@ -131,10 +132,13 @@ ul {
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--blue-text);
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-link {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -143,6 +147,14 @@ ul {
   color: var(--grey-text);
   text-decoration: none;
   margin-left: 50px;
+}
+
+.header-list-icon {
+  width: 16px;
+  height: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 10px;
 }
 
 .logo {
