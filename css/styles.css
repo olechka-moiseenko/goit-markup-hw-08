@@ -272,18 +272,18 @@ ul {
   justify-content: space-between;
 }
 
-.content_block_items: :before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-image: url(../images);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 /* our_features */
 .our_features > li {
   width: 270px;
+}
+
+.our_features > li::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url("../images/sprite.svg#antenna");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .our_features > li > h3 {
