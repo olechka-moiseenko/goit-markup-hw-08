@@ -55,9 +55,6 @@ ul {
 .footer {
   color: white;
   background: var(--dark-backround);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .footer_block {
@@ -67,6 +64,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
+  display: flex;
 }
 
 .footer_logo,
@@ -92,6 +90,28 @@ ul {
 .footer_link:focus {
   color: var(--blue-text);
 }
+
+
+.footer_social {
+  width: 206px;
+  margin-left: 70px;
+}
+
+.footer_social > h3 {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer_social > div >svg {
+  --colorSotial: white;
+  --colorSotialBg: rgba(255, 255, 255, 0.1);
+}
+
 
 .header {
   display: flex;
@@ -357,29 +377,31 @@ ul {
   letter-spacing: 0.03em;
   color: var(--grey-text);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .about_us_items > li > img {
   width: 270px;
 }
 
-.about_us_items > li > div {
-  margin-top: 16px;
+.social_links {
   display: flex;
   justify-content: center;
 }
 
-.about_us_items > li > div > svg {
+.social_links > svg {
   width: 44px;
   height: 44px;
-  margin-left: 5px;
-  margin-right: 5px;
-  fill: white;
+  --colorSotialBg: white;
 }
 
-.about_us_items > li > div > svg:hover,
-.about_us_items > li > div > svg:focus {
-  fill: var(--accent-color);
+.social_links > svg:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.social_links > svg:hover,
+.social_links > svg:focus {
+  --colorSotialBg: var(--accent-color);
 }
 
 .portfolio_filter {
@@ -458,24 +480,11 @@ ul {
 }
 
 .regular_customers > ul > li > svg {
-  fill: #afb1b8;
-  stroke: #afb1b8;
   width: 170px;
   height: 90px;
 }
 
 .regular_customers > ul > li > svg:hover,
 .about_us_items > li > div > svg:focus {
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
-}
-
-.social_links > h3 {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  --colorClientLogoAccent: var(--accent-color);
 }
