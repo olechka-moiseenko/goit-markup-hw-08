@@ -289,7 +289,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.our_features > li > div> svg {
+.our_features > li > div > svg {
   width: 70px;
   height: 70px;
 }
@@ -374,6 +374,12 @@ ul {
   height: 44px;
   margin-left: 5px;
   margin-right: 5px;
+  fill: white;
+}
+
+.about_us_items > li > div > svg:hover,
+.about_us_items > li > div > svg:focus {
+  fill: var(--accent-color);
 }
 
 .portfolio_filter {
@@ -395,6 +401,8 @@ ul {
   background: white;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio_items > li > h3 {
@@ -419,4 +427,55 @@ ul {
 .portfolio_items > ul > li > img {
   width: 370px;
   height: 294;
+}
+
+.regular_customers {
+  padding: 94px;
+}
+
+.regular_customers > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.regular_customers > ul {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.regular_customers > ul > li {
+  width: 170px;
+  height: 90px;
+  /* border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px; */
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.regular_customers > ul > li > svg {
+  fill: #afb1b8;
+  stroke: #afb1b8;
+  width: 170px;
+  height: 90px;
+}
+
+.regular_customers > ul > li > svg:hover,
+.about_us_items > li > div > svg:focus {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+.social_links > h3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
