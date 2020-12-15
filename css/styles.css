@@ -277,13 +277,21 @@ ul {
   width: 270px;
 }
 
-.our_features > li::before {
-  display: block;
-  content: "";
+.our_features > li > div {
+  width: 270px;
   height: 120px;
-  background-image: url("../images/sprite.svg#antenna");
-  background-size: contain;
-  background-repeat: no-repeat;
+  outline: 1px solid white;
+  background: var(--grey-backround);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.our_features > li > div> svg {
+  width: 70px;
+  height: 70px;
 }
 
 .our_features > li > h3 {
@@ -353,6 +361,19 @@ ul {
 
 .about_us_items > li > img {
   width: 270px;
+}
+
+.about_us_items > li > div {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.about_us_items > li > div > svg {
+  width: 44px;
+  height: 44px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .portfolio_filter {
