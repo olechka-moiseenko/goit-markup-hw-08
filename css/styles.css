@@ -107,7 +107,7 @@ ul {
   text-transform: uppercase;
 }
 
-.footer_social > div >svg {
+.footer_social > div >a {
   --colorSocial: white;
   --colorSocialBg: rgba(255, 255, 255, 0.1);
 }
@@ -389,18 +389,21 @@ ul {
   justify-content: center;
 }
 
-.social_links > svg {
-  width: 44px;
-  height: 44px;
+.social_links > a {
   --colorSocialBg: white;
 }
 
-.social_links > svg:nth-child(n+2) {
+.social_links > a > svg {
+  width: 44px;
+  height: 44px;
+}
+
+.social_links > a:nth-child(n+2) {
   margin-left: 10px;
 }
 
-.social_links > svg:hover,
-.social_links > svg:focus {
+.social_links > a:hover,
+.social_links > a:focus {
   --colorSocial: white;
   --colorSocialBg: var(--accent-color);
 }
