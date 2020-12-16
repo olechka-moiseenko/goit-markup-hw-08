@@ -483,12 +483,12 @@ ul {
   margin-left: 15px;
 }
 
-.regular_customers > ul > li > svg {
+.regular_customers > ul > li > a > svg {
   width: 170px;
   height: 90px;
 }
 
-.regular_customers > ul > li > svg:hover,
-.about_us_items > li > div > svg:focus {
+.regular_customers > ul > li > a:hover,
+.regular_customers > ul > li > a:focus {
   --colorClientLogoAccent: var(--accent-color);
 }
