@@ -125,11 +125,12 @@ ul {
   color: var(--grey-text);
   text-decoration: none;
   margin-left: 50px;
+  padding: 2px;
 }
 
 .header-list-icon {
   width: 16px;
-  height: 18px;
+  height: 14px;
   margin-right: 10px;
 }
 
