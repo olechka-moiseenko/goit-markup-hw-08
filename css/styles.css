@@ -188,8 +188,8 @@ ul {
 }
 
 .footer_social > div > a {
-  --colorSocial: white;
-  --colorSocialBg: rgba(255, 255, 255, 0.1);
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -390,12 +390,11 @@ ul {
 }
 
 .social_links > a {
-  --colorSocialBg: white;
-}
-
-.social_links > a > svg {
   width: 44px;
   height: 44px;
+  display: flex;
+  border-radius: 50%;
+  fill: #afb1b8;
 }
 
 .social_links > a:nth-child(n + 2) {
@@ -404,8 +403,8 @@ ul {
 
 .social_links > a:hover,
 .social_links > a:focus {
-  --colorSocial: white;
-  --colorSocialBg: var(--accent-color);
+  fill: white;
+  background-color: var(--accent-color);
 }
 
 .portfolio_filter {
@@ -424,7 +423,7 @@ ul {
   margin-top: 30px;
 }
 
-.portfolio_items > li >a {
+.portfolio_items > li > a {
   padding-bottom: 20px;
   width: 370px;
   background: white;
@@ -453,7 +452,7 @@ ul {
   margin-left: 24px;
 }
 
-.portfolio_items > li > a >p {
+.portfolio_items > li > a > p {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -494,14 +493,19 @@ ul {
 
 .regular_customers > ul > li > a {
   display: flex;
-}
-
-.regular_customers > ul > li > a > svg {
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 170px;
   height: 90px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .regular_customers > ul > li > a:hover,
 .regular_customers > ul > li > a:focus {
-  --colorClientLogoAccent: var(--accent-color);
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
