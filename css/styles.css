@@ -105,7 +105,7 @@ ul {
 }
 
 .navigation-list-item-selected::after {
-  content:'';
+  content: "";
   position: absolute;
   bottom: 0;
   display: block;
@@ -114,7 +114,6 @@ ul {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-
 
 .header-contacts {
   align-items: center;
@@ -311,7 +310,7 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transition-property: color, background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .porfolio_button:hover,
@@ -370,6 +369,24 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
+}
+
+.about_header_items > li > h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+}
+
+.about_header_items > li {
+  position: relative;
+  line-height: 0; /* to avoid empty space bottom of a image withtin */
 }
 
 .about_us {
