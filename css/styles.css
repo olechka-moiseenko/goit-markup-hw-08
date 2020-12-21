@@ -203,7 +203,7 @@ ul {
   padding-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -386,7 +386,7 @@ ul {
 
 .about_header_items > li {
   position: relative;
-  line-height: 0; /* to avoid empty space bottom of a image withtin */
+  display: flex; /* to avoid empty space bottom of a image withtin */
 }
 
 .about_us {
