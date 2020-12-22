@@ -40,7 +40,7 @@
   <section class="main_page_top">
     <div class="container">
       <h1 class="caption">Эффективные решения для вашего бизнеса</h1>
-      <button type="button" class="order_service_button">Заказать услугу</button>
+      <button type="button" class="order_service_button" data-modal-open>Заказать услугу</button>
     </div>
   </section>
   <section class="content_block container">
@@ -313,14 +313,16 @@
       </div>
     </div>
   </footer>
-
-  <div class="backdrop">
-    <div class="modal" </div>
-      <button type="button" class="modal_close_button" <svg>
-        <use href="./images/sprite.svg#close_button" </use>
-          </svg>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal_close_button" data-modal-close>
+        <svg>
+          <use href="./images/sprite.svg#close_button"/>
+        </svg>
       </button>
     </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
