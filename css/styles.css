@@ -512,9 +512,35 @@ ul {
   margin-left: 24px;
 }
 
-.portfolio_items > li > a > img {
+.portfolio_items > li > a > div{
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_items > li > a > div > img {
   width: 370px;
-  height: 294px;
+  height: 294px;  
+}
+
+.portfolio_items > li > a:hover .portfolio_item_overlay{
+  transform: translatey(0);
+}
+
+.portfolio_item_overlay{
+  position: absolute;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: white;
+  padding: 63px 24px;
 }
 
 .regular_customers {
