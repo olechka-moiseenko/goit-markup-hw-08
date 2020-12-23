@@ -311,29 +311,59 @@
           </a>
         </div>
       </div>
-      <div>
+      <div class="subscribe">
         <h3>Подпишитесь на рассылку</h3>
-        <form class="subscribe">
+        <form>
           <input type="email" name="email" placeholder="Email" />
           <button type="submit">Подписаться
             <svg>
               <use href="./images/sprite.svg#button_subscribe" />
             </svg>
-          </button> 
+          </button>
         </form>
-        </div>
+      </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal_close_button" data-modal-close>
+    <div class="order_dialog">
+      <button type="button" class="order_dialog_close_button" data-modal-close>
         <svg>
-          <use href="./images/sprite.svg#close_button"/>
+          <use href="./images/sprite.svg#close_button" />
         </svg>
       </button>
+      <h1>Оставьте свои данные, мы вам перезвоним</h1>
+      <form>
+        <label>
+          Имя
+          <div>
+            <svg>
+              <use href="images/sprite.svg#order_person" />
+            </svg>
+            <input type="text" name="order_person">
+          </div>
+          </input>
+        </label>
+        <label>
+          Телефон
+          <input type="tel" name="order_tel" />
+        </label>
+        <label>
+          Почта
+          <input type="email" name="order_email" />
+        </label>
+        <label>
+          Комментарий
+          <textarea name="order_comment" placeholder="Введите текст"></textarea>
+        </label>
+        <label>
+          Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          <input type="checkbox" name="order_agrimment" />
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
     </div>
   </div>
-  <script src="./js/modal.js"></script>
+  <script src="./js/modal.js" />
 </body>
 
 </html>
