@@ -727,6 +727,20 @@ ul {
   border-radius: 4px;
 }
 
+.order_dialog_field > span:hover svg {
+  fill: var(--accent-color);
+}
+.order_dialog_field > span:hover input {
+  border-color: var(--accent-color);
+}
+.order_dialog_field > span > input:focus ~ svg {
+  fill: var(--accent-color);
+}
+.order_dialog_field > span > input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
 .order_dialog_field > textarea {
   margin-top: 4px;
   width: 100%;
@@ -766,6 +780,13 @@ order_agrimment .order_agrimment > input {
   background-color: var(--accent-color);
   color: white;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
 }
 
 .is-hidden {
