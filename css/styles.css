@@ -150,6 +150,7 @@ ul {
   width: 16px;
   height: 14px;
   margin-right: 10px;
+  fill: var(--grey-text);
 }
 
 .footer {
