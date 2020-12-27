@@ -774,7 +774,7 @@ ul {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--dark-text);
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 .order_agrimment > a {
