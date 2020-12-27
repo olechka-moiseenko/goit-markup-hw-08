@@ -333,7 +333,7 @@
       </button>
       <h1>Оставьте свои данные, мы вам перезвоним</h1>
       <form>
-        <label>
+        <label class="order_dialog_field">
           Имя
           <span>
             <svg>
@@ -343,7 +343,7 @@
           </span>
           </input>
         </label>
-        <label>
+        <label class="order_dialog_field">
           Телефон
           <span>
             <svg>
@@ -353,25 +353,25 @@
           </span>
           </input>
         </label>
-        <label>
+        <label class="order_dialog_field">
           Почта
           <span>
             <svg>
-              <use href="images/sprite.svg#order_email"/>
+              <use href="images/sprite.svg#order_email" />
             </svg>
-          <input type="email" name="order_email" />
-        </span>
-      </input>
+            <input type="email" name="order_email" />
+          </span>
+          </input>
         </label>
-        <label>
+        <label class="order_dialog_field">
           Комментарий
-          <textarea name="order_comment" placeholder="Введите текст"></textarea>
+          <textarea name="order_comment" placeholder="Введите текст" class="order_dialog_comment"></textarea>
         </label>
-        <label>
+        <label class="order_agrimment">
+          <input type="checkbox" name="order_agrimment" class="order_agrimment" />
           Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-          <input type="checkbox" name="order_agrimment" />
         </label>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="order_dialog_send_button">Отправить</button>
       </form>
     </div>
   </div>
