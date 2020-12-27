@@ -736,6 +736,7 @@ ul {
 .order_dialog_field > span > input:focus ~ svg {
   fill: var(--accent-color);
 }
+
 .order_dialog_field > span > input:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -749,6 +750,17 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
   resize: none;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  fill: var(--dark-text);
+}
+
+.order_dialog_field > textarea:hover,
+.order_dialog_field > textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .order_agrimment {
@@ -756,14 +768,14 @@ ul {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--dark-text);
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 .order_agrimment > a {
   color: var(--blue-text);
 }
 
-order_agrimment .order_agrimment > input {
+.order_agrimment > input {
   display: inline-block;
   width: 16px;
   height: 15px;
