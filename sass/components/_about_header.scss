@@ -7,24 +7,24 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
-}
 
-.about_header_items > li > h3 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: white;
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 0;
-}
+  &_items > li > h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0;
+  }
 
-.about_header_items > li {
-  position: relative;
-  display: flex; /* to avoid empty space bottom of a image withtin */
+  &_items > li {
+    position: relative;
+    display: flex; /* to avoid empty space bottom of a image withtin */
+  }
 }
 
 .about_us {
@@ -32,37 +32,37 @@
   padding-bottom: 94px;
   background-color: var(--grey-backround);
   margin-top: 94px;
-}
 
-.about_us_items > li {
-  width: 270px;
-  padding-bottom: 30px;
-  background: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  &_items > li {
+    width: 270px;
+    padding-bottom: 30px;
+    background: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.about_us_items > li > h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--dark-text);
-  margin-top: 30px;
-}
+  &_items > li > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-text);
+    margin-top: 30px;
+  }
 
-.about_us_items > li > p {
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--grey-text);
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
+  &_items > li > p {
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey-text);
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
 
-.about_us_items > li > img {
-  width: 270px;
+  &_items > li > img {
+    width: 270px;
+  }
 }

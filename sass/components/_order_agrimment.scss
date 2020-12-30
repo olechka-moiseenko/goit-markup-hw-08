@@ -5,16 +5,16 @@
   color: var(--dark-text);
   margin: 20px auto 0;
   vertical-align: text-top;
-}
 
-.order_agrimment > a {
-  color: var(--blue-text);
-}
+  & > a {
+    color: var(--blue-text);
+  }
 
-.order_agrimment > input {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  margin: 0 7px 0 0;
+  & > input {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    margin: 0 7px 0 0;
+  }
 }
