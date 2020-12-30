@@ -1,6 +1,10 @@
+@import "./utils/variabless";
+@import "./utils/is-hidden";
+
 @import "./base/common";
 @import "./base/container";
-@import "./components/сontent_block";
+
+@import "./components/content_block";
 @import "./components/content_block_items";
 @import "./components/header";
 @import "./components/menu_underscore";
