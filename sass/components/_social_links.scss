@@ -1,0 +1,25 @@
+.social_links {
+  display: flex;
+  justify-content: center;
+}
+
+.social_links > a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social_links > a:nth-child(n + 2) {
+  margin-left: 10px;
+}
+
+.social_links > a:hover,
+.social_links > a:focus {
+  fill: white;
+  background-color: var(--accent-color);
+}
