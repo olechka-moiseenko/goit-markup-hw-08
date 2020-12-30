@@ -298,7 +298,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_banner.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -355,7 +360,8 @@ ul {
   padding-bottom: 6px;
   background-color: var(--button-color-grey);
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -448,7 +454,8 @@ ul {
   width: 270px;
   padding-bottom: 30px;
   background: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -492,7 +499,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social_links > a:nth-child(n+2) {
+.social_links > a:nth-child(n + 2) {
   margin-left: 10px;
 }
 
@@ -536,7 +543,8 @@ ul {
 
 .portfolio_items > li > a:hover,
 .portfolio_items > li > a:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio_items > li > a > h3 {
@@ -652,7 +660,8 @@ ul {
   min-height: 581px;
   background-color: white;
   padding: 40px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -775,6 +784,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--dark-text);
   margin: 20px auto 0;
+  vertical-align: text-top;
 }
 
 .order_agrimment > a {
@@ -786,7 +796,7 @@ ul {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  margin-right: 7px;
+  margin: 0 7px 0 0;
 }
 
 .order_dialog_send_button {
@@ -807,4 +817,4 @@ ul {
   line-height: 1.87;
 }
 
-/*# sourceMappingURL=file:///d:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%9E%D0%BB%D1%8F/GitHub/goit-markup-hw-07/css/main.css.map *//*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=file:///d:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%9E%D0%BB%D1%8F/GitHub/goit-markup-hw-07/css/main.css.map */ /*# sourceMappingURL=main.css.map */
