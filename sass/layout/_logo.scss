@@ -1,0 +1,22 @@
+
+.logo {
+  font-size: 26px;
+  font-family: var(--logo-font);
+  font-weight: bold;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo_header,
+.logo_header:visited {
+  color: black;
+  margin-right: 93px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-blue {
+  color: var(--blue-logo);
+}
