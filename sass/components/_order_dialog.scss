@@ -10,115 +10,113 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
 
-.order_dialog_close_button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &_close_button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.order_dialog > h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(-dark-text);
-  margin-bottom: 2px;
-}
+  & > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(-dark-text);
+    margin-bottom: 2px;
+  }
 
-.order_dialog_close_button > svg {
-  width: 11px;
-  height: 11px;
-}
+  &_close_button > svg {
+    width: 11px;
+    height: 11px;
+  }
 
-.order_dialog > form {
-  display: flex;
-  flex-direction: column;
-}
+  & > form {
+    display: flex;
+    flex-direction: column;
+  }
 
-.order_dialog_field {
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-  color: var(--grey-text);
-  margin-top: 10px;
-}
+  &_field {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: var(--grey-text);
+    margin-top: 10px;
 
-.order_dialog_field > span {
-  position: relative;
-  display: block;
-  margin-top: 4px;
-}
+    & > span {
+      position: relative;
+      display: block;
+      margin-top: 4px;
 
-.order_dialog_field > span > svg {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  fill: var(--dark-text);
-}
+      & > svg {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        fill: var(--dark-text);
+      }
 
-.order_dialog_field > span > input {
-  width: 100%;
-  height: 40px;
-  padding-left: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+      & > input {
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition-property: fill, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-.order_dialog_field > span:hover svg {
-  fill: var(--accent-color);
-}
-.order_dialog_field > span:hover input {
-  border-color: var(--accent-color);
-}
-.order_dialog_field > span > input:focus ~ svg {
-  fill: var(--accent-color);
-}
+      &:hover svg {
+        fill: var(--accent-color);
+      }
+      &:hover input {
+        border-color: var(--accent-color);
+      }
+      & > input:focus ~ svg {
+        fill: var(--accent-color);
+      }
+      & > input:focus {
+        border-color: var(--accent-color);
+        outline: none;
+      }
+    }
 
-.order_dialog_field > span > input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.order_dialog_field > textarea {
-  margin-top: 4px;
-  width: 100%;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 12px 16px;
-  resize: none;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  fill: var(--dark-text);
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.order_dialog_field > textarea:hover,
-.order_dialog_field > textarea:focus {
-  border-color: var(--accent-color);
-  outline: none;
+    & > textarea {
+      margin-top: 4px;
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      padding: 12px 16px;
+      resize: none;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      fill: var(--dark-text);
+      transition-property: fill, border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+      }
+    }
+  }
 }

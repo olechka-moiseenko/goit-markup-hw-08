@@ -1,4 +1,4 @@
- .main_page_top {
+.main_page_top {
   background: var(--dark-backround);
   color: white;
   padding-top: 200px;
@@ -16,11 +16,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.main_page_top > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
