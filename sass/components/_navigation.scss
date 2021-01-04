@@ -9,7 +9,7 @@
   justify-content: space-between;
 
   &-list-item {
-    color: var(--dark-text);
+    color: $color-navigation-list-item;
     text-decoration: none;
     margin-right: 50px;
     position: relative;
@@ -18,7 +18,7 @@
     align-items: center;
 
     &-selected {
-      color: var(--accent-color);
+      color: $color-accent;
     }
 
     &-selected::after {
@@ -28,7 +28,7 @@
       display: block;
       width: 100%;
       height: 4px;
-      background-color: var(--accent-color);
+      background-color: $color-accent;
       border-radius: 2px;
     }
   }

@@ -1,7 +1,7 @@
 body {
-  font-family: var(--document-font);
+  font-family: $font-main;
   font-style: normal;
-  background-color: var(--common-backgound-color);
+  background-color: $color-background;
   margin: 0;
 }
 

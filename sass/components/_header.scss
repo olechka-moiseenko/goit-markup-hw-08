@@ -19,8 +19,8 @@
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: var(--grey-text);
-    fill: var(--grey-text);
+    color: $color-header-link;
+    fill: $color-header-link;
     text-decoration: none;
     margin-left: 50px;
     padding: 2px;
@@ -32,8 +32,8 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
-      fill: var(--accent-color);
+      color: $color-accent;
+      fill: $color-accent;
     }
   }
 

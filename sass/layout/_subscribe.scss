@@ -16,15 +16,15 @@
       width: 358px;
       margin-right: 12px;
 
-      & :hover,
-      & :focus {
-        border-color: var(--accent-color);
+      &:hover,
+      &:focus {
+        border-color: $color-accent;
       }
     }
 
     & > button {
-      color: var(--button-text-color);
-      background-color: var(--button-color-blue);
+      color: $color-button-text;
+      background-color: $color-button;
       font-weight: bold;
       font-size: 16px;
       line-height: 1.875;

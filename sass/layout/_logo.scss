@@ -1,6 +1,6 @@
 .logo {
   font-size: 26px;
-  font-family: var(--logo-font);
+  font-family: $font-logo;
   font-weight: bold;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -16,6 +16,6 @@
   }
 
   &-blue {
-    color: var(--blue-logo);
+    color: #2196f3;
   }
 }

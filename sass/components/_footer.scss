@@ -1,6 +1,6 @@
 .footer {
-  color: white;
-  background: var(--dark-backround);
+  color: $color-footer-text;
+  background: $color-background-footer;
 
   &_block {
     padding-left: 15px;
@@ -34,7 +34,7 @@
 
     &:hover,
     &:focus {
-      color: var(--blue-text);
+      color: $color-accent;
     }
   }
 
@@ -43,8 +43,8 @@
     margin-left: 70px;
 
     &_social > div > a {
-      fill: white;
-      background-color: rgba(255, 255, 255, 0.1);
+      fill: $color-footer-social;
+      background-color: $color-footer-social-background;
     }
   }
 

@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  background-color: white;
+  background-color: $color-order_dialog-background;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -33,7 +33,7 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(-dark-text);
+    color: $color-order_dialog-title;
     margin-bottom: 2px;
   }
 
@@ -51,7 +51,7 @@
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
-    color: var(--grey-text);
+    color: $color-order-dialog-field;
     margin-top: 10px;
 
     & > span {
@@ -66,7 +66,7 @@
         transform: translateY(-50%);
         width: 18px;
         height: 18px;
-        fill: var(--dark-text);
+        fill: $color-order_dialog-title;
       }
 
       & > input {
@@ -82,16 +82,16 @@
       }
 
       &:hover svg {
-        fill: var(--accent-color);
+        fill: $color-accent;
       }
       &:hover input {
-        border-color: var(--accent-color);
+        border-color: $color-accent;
       }
       & > input:focus ~ svg {
-        fill: var(--accent-color);
+        fill: $color-accent;
       }
       & > input:focus {
-        border-color: var(--accent-color);
+        border-color: $color-accent;
         outline: none;
       }
     }
@@ -107,14 +107,14 @@
       font-size: 14px;
       line-height: 1.143;
       letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
-      fill: var(--dark-text);
+      color: $color-order-dialog-textarea;
+      fill: $color-order-dialog-textarea-text;
       transition-property: fill, border-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
-        border-color: var(--accent-color);
+        border-color: $color-accent;
         outline: none;
       }
     }

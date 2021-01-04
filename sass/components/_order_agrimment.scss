@@ -2,12 +2,12 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--dark-text);
+  color: $color-order-agreement-text;
   margin: 20px auto 0;
   vertical-align: text-top;
 
   & > a {
-    color: var(--blue-text);
+    color: $color-order-agreement-text;
   }
 
   & > input {
