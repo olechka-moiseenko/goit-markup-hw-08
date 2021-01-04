@@ -19,7 +19,7 @@
     &:hover,
     &:focus {
       fill: white;
-      background-color: var(--accent-color);
+      background-color: $color-accent;
     }
   }
 }

@@ -4,8 +4,8 @@
   height: 50px;
   width: 200px;
   border-radius: 4px;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: $color-order-dialog-send-button;
+  color: $color-order-dialog-send-button-text;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;

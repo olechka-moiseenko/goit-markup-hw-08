@@ -15,7 +15,7 @@
     & > a {
       padding-bottom: 20px;
       width: 370px;
-      background: white;
+      background: $color-portfolio_items-background;
       border: 1px solid #eeeeee;
       box-sizing: border-box;
       display: flex;
@@ -38,7 +38,7 @@
         font-size: 2;
         line-height: 36px;
         letter-spacing: 0.06em;
-        color: var(--dark-text);
+        color: $color-portfolio-title;
         margin-top: 20px;
         margin-left: 24px;
       }
@@ -47,7 +47,7 @@
         font-size: 16px;
         line-height: 1.875;
         letter-spacing: 0.03em;
-        color: var(--grey-text);
+        color: $color-portfolio-text;
         margin-top: 4px;
         margin-left: 24px;
       }
@@ -80,7 +80,7 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: white;
+    color: $color-portfolio_item_overlay-text;
     padding: 63px 24px;
   }
 }
