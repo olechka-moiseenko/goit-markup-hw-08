@@ -42,7 +42,7 @@
     width: 206px;
     margin-left: 70px;
 
-    &_social > div > a {
+    & > div > a {
       fill: $color-footer-social;
       background-color: $color-footer-social-background;
     }
