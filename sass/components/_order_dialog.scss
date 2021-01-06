@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  background-color: $color-order_dialog-background;
+  background-color: $color-order-dialog-background;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,6 +13,7 @@
 
   &_close_button {
     position: absolute;
+    background-color: $color-order-dialog-background;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -24,6 +25,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &_send_button {
+    display: block;
+    margin: 30px auto 0;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: $color-order-dialog-send-button;
+    color: $color-order-dialog-send-button-text;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    line-height: 1.87;
   }
 
   & > h1 {

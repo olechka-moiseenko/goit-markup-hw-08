@@ -61,7 +61,8 @@
         }
       }
 
-      &:hover .portfolio_item_overlay {
+      &:hover .portfolio_item_overlay,
+      &:focus .portfolio_item_overlay {
         transform: translatey(0);
       }
     }
