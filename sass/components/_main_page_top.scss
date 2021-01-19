@@ -3,27 +3,60 @@
   padding-bottom: 198px;
   background: url("../images/mobile/header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 30px;
+  background-position: center top;
+  background-size: 480px 400px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > h1 {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.615;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0 60px;
+      color: $color-main_page_top_text;
+    }
+
+    & > button {
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 32px;
+      padding-right: 32px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      font-family: $font-main;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      background-color: $color-button;
+      color: $color-button-text;
+      margin-top: 40px;
+    }
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .main_page_top {
-      background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-       ),
-      url(../images/2x/header.jpg);
-    }
-    
-    
-    
-    
-    
-    // .main_page_top {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .main_page_top {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/2x/header.jpg");
+  }
+}
+
+// .main_page_top {
 //   background: $color-main_page_top-background;
 //   color: $color-main_page_top_text;
 //   padding-top: 200px;
