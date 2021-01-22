@@ -1,7 +1,7 @@
 .main_page_top {
   padding-top: 118px;
   padding-bottom: 198px;
-  background: url("../images/mobile/header.jpg");
+  background-image: url("../images/mobile/1x/header.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
@@ -52,13 +52,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/2x/header.jpg");
+      url("../images/mobile/2x/header.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .main_page_top {
-    background: url("../images/tablet/header.jpg");
+    background: url("../images/tablet/1x/header.jpg");
     background-size: 768px 400px;
   }
 }
@@ -72,13 +72,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/tablet/header2x.jpg");
+      url("../images/tablet/2x/header.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   main_page_top {
-    background: url("../images/desktop/header.jpg");
+    background: url("../images/desktop/1x/header.jpg");
     background-repeat: no-repeat;
     background-position: cover;
     padding-top: 200px;
@@ -95,7 +95,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/tablet/header2x.jpg");
+      url("../images/desctop/2x/header.jpg");
   }
 }
 
