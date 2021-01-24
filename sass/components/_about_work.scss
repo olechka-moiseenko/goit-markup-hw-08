@@ -1,0 +1,38 @@
+/* ABOUT */
+
+.about_work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about_work {
+    display: block;
+  }
+}
+
+// .about_header {
+//   font-weight: bold;
+//   font-size: 36px;
+//   line-height: 1.167;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: $color-title;
+
+//   &_items > li > h3 {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     text-align: center;
+//     font-size: 14px;
+//     line-height: 16px;
+//     text-transform: uppercase;
+//     color: $color-overlay-text;
+//     background-color: $color-overlay-background;
+//     padding: 27px 0;
+//   }
+
+//   &_items > li {
+//     position: relative;
+//     display: flex; /* to avoid empty space bottom of a image withtin */
+//   }
+// }

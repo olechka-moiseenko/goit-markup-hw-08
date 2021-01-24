@@ -2,11 +2,18 @@
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
-  display: block;
 
   &_items {
     padding-top: 0;
-    display: flex;
-    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content_block {
+    display: block;
+    &_items {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
