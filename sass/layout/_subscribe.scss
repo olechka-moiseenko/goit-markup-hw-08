@@ -15,7 +15,6 @@
       background-color: transparent;
       padding: 15px 16px;
       width: 450px;
-      margin-right: 12px;
 
       &:hover,
       &:focus {
@@ -35,13 +34,29 @@
       border-radius: 4px;
       display: flex;
       align-items: center;
-      margin: 20px 140px 60px 140px;
+      margin: 20px 0;
 
       & > svg {
-        width: 13px;
-        height: 13px;
+        width: 24px;
+        height: 24px;
         fill: white;
         margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    & > form {
+      display: flex;
+      justify-content: left;
+      & > input {
+        width: 358px;
+      }
+      & > button {
+        margin: 0 0 0 12px;
+        width: 200px;
       }
     }
   }

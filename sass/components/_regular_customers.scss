@@ -37,6 +37,17 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .regular_customers {
+    & > ul > li {
+      margin-top: 30px;
+      & > a {
+        width: 170px;
+      }
+    }
+  }
+}
+
 // .regular_customers {
 //   padding: 94px;
 
