@@ -26,12 +26,7 @@ p {
 
 ul {
   list-style: none;
-}
-
-@media screen and (min-width: 768px) {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
