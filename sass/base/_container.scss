@@ -1,26 +1,23 @@
-// .container {
-//   margin: 0 auto;
-//   width: 1200px;
-// }
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
-  container {
+  .container {
     max-width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  container {
+  .container {
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  container {
+  .container {
     max-width: 1200px;
   }
 }

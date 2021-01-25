@@ -1,8 +1,9 @@
 .subscribe {
-  margin-left: 93px;
-
   & > form {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     & > input {
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -13,7 +14,7 @@
       line-height: 20px;
       background-color: transparent;
       padding: 15px 16px;
-      width: 358px;
+      width: 450px;
       margin-right: 12px;
 
       &:hover,
@@ -34,10 +35,11 @@
       border-radius: 4px;
       display: flex;
       align-items: center;
+      margin: 20px 140px 60px 140px;
 
       & > svg {
-        width: 24px;
-        height: 24px;
+        width: 13px;
+        height: 13px;
         fill: white;
         margin-left: 10px;
       }

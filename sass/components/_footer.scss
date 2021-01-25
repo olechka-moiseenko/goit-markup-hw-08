@@ -1,19 +1,18 @@
 .footer {
-  color: $color-footer-text;
   background: $color-background-footer;
+  color: $color-footer-text;
 
   &_block {
-    padding-left: 15px;
-    padding-bottom: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0 auto;
-    display: flex;
+    text-align: center;
+    & > div {
+      padding-top: 60px;
+    }
   }
 
   &_logo,
   &_logo:visited {
     color: white;
+    margin: 0 auto;
   }
 
   &_address {
@@ -37,18 +36,14 @@
       color: $color-accent;
     }
   }
-
   &_social {
-    width: 206px;
-    margin-left: 70px;
-
     & > div > a {
       fill: $color-footer-social;
       background-color: $color-footer-social-background;
     }
   }
 
-  & h3 {
+  &_h3 {
     padding-top: 12px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -58,3 +53,72 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-color: $color-background-footer;
+    color: $color-footer-text;
+    display: flex;
+  }
+}
+
+// .footer {
+//   color: $color-footer-text;
+//   background: $color-background-footer;
+
+//   &_block {
+//     padding-bottom: 15px;
+// padding-left: 15px;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     margin: 0 auto;
+//     display: flex;
+//   }
+
+//   &_logo,
+//   &_logo:visited {
+//     color: white;
+//   }
+
+//   &_address {
+//     font-style: normal;
+//     font-weight: normal;
+//     margin-top: 20px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   &_link {
+//     color: rgba(255, 255, 255, 0.6);
+//     text-decoration: none;
+//     margin-top: 9px;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//       color: $color-accent;
+//     }
+//   }
+
+//   &_social {
+//     width: 206px;
+//     margin-left: 70px;
+
+//     & > div > a {
+//       fill: $color-footer-social;
+//       background-color: $color-footer-social-background;
+//     }
+//   }
+
+//   & h3 {
+//     padding-top: 12px;
+//     padding-bottom: 20px;
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//   }
+// }
