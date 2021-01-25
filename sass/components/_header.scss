@@ -6,34 +6,121 @@
   padding-right: 15px;
   justify-content: space-between;
 
+  &-logo,
+  &-logo:visited {
+    color: black;
+    margin-right: 93px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
   &-contacts {
     display: none;
   }
 
-  .navigation {
+  &-navigation {
     display: none;
+  }
+
+  &-menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 10px 0;
+    border: 0;
+    line-height: 0;
+    background: transparent;
+
+    & .icon-close-button {
+      display: none;
+    }
+
+    & .is-open .icon-close-button {
+      display: block;
+    }
+
+    & .is-open .icon-menu {
+      display: none;
+    }
   }
 }
 
-.menu-button {
-  display: ihline-flex;
-  margin: 0;
-  padding: 10px 0;
-  border: 0;
-  line-height: 0;
-  background: transparent;
-}
+@media screen and (min-width: 1200px) {
+  .header {
+    &-menu-button {
+      display: none;
+    }
+    &-navigation {
+      display: flex;
+      justify-items: flex-end;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 0.143;
+      letter-spacing: 0.02em;
+      justify-content: space-between;
+      &-item {
+        color: $color-navigation-list-item;
+        text-decoration: none;
+        margin-right: 50px;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
 
-.menu-button .icon-close_button {
-  display: none;
-}
+        &-selected {
+          color: $color-accent;
+        }
 
-.menu-button .is-open .icon-close_button {
-  display: block;
-}
+        &-selected::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: $color-accent;
+          border-radius: 2px;
+        }
+      }
+    }
+    &-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+      color: $color-header-link;
+      fill: $color-header-link;
+      text-decoration: none;
+      margin-left: 50px;
+      padding: 2px;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      padding-top: 32px;
+      padding-bottom: 32px;
 
-.menu-button .is-open .icon-menu {
-  display: none;
+      &:hover,
+      &:focus {
+        color: $color-accent;
+        fill: $color-accent;
+      }
+
+      &-icon {
+        width: 16px;
+        height: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 // .menu-container {
