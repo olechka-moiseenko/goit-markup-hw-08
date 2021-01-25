@@ -1,5 +1,5 @@
 .about_us {
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: $color-about_us-background;
   & > h2 {
     font-weight: bold;
@@ -50,6 +50,13 @@
 @media screen and (min-width: 1200px) {
   .about_us {
     display: block;
+    padding-top: 94px;
+    & > ul {
+      padding-top: 50px;
+      & > li {
+        margin-top: 0;
+      }
+    }
   }
 }
 // .about_us {

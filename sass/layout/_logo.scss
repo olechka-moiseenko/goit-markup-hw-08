@@ -5,16 +5,6 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin: auto 0;
-
-  &_header,
-  &_header:visited {
-    color: black;
-    margin-right: 93px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
 
   &-blue {
     color: #2196f3;
