@@ -4,8 +4,14 @@
 
   &_block {
     text-align: center;
+    padding: 60px 15px;
+
     & > div {
-      padding-top: 60px;
+      margin: 0 auto;
+    }
+
+    & h3 {
+      margin-top: 60px;
     }
   }
 
@@ -16,6 +22,8 @@
   }
 
   &_address {
+    width: 231px;
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
     margin-top: 20px;
@@ -43,7 +51,7 @@
     }
   }
 
-  &_h3 {
+  & h3 {
     padding-top: 12px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -54,11 +62,35 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    background-color: $color-background-footer;
-    color: $color-footer-text;
-    display: flex;
+    &_block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & > div {
+        padding-left: 76px;
+        padding-right: 89px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &_block {
+      text-align: left;
+      display: flex;
+      & > div:nth-child(2) {
+        padding-left: 70px;
+      }
+      & > div:nth-child(3) {
+        padding-left: 93px;
+      }
+      & h3 {
+        margin-top: 0;
+      }
+    }
   }
 }
 
