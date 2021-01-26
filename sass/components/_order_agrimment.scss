@@ -1,6 +1,6 @@
 .order_agrimment {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: $color-order-agreement-text;
   margin: 20px auto 0;
@@ -16,5 +16,11 @@
     height: 15px;
     border: 2px solid #212121;
     margin: 0 7px 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 14px;
+      line-height: 1.714;
+    }
   }
 }
