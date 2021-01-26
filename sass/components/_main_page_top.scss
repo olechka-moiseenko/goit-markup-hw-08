@@ -3,7 +3,7 @@
   background-image: url("../images/mobile/1x/header.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 480px 400px;
+  background-size: cover;
 
   & > div {
     display: flex;
@@ -18,7 +18,7 @@
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      max-width: 360px;
+      width: 360px;
       color: $color-main_page_top_text;
     }
 
@@ -53,8 +53,7 @@
 
 @media screen and (min-width: 768px) {
   .main_page_top {
-    background: url("../images/tablet/1x/header.jpg");
-    background-size: 768px 400px;
+    background-image: url("../images/tablet/1x/header.jpg");
   }
 }
 
@@ -72,22 +71,18 @@
 }
 
 @media screen and (min-width: 1200px) {
-  main_page_top {
-    background: url("../images/desktop/1x/header.jpg");
+  .main_page_top {
+    background-image: url("../images/desktop/1x/header.jpg");
     background-repeat: no-repeat;
     background-position: cover;
-    padding-top: 200px;
-    padding-bottom: 280px;
-    padding-right: 452px;
-    padding-left: 452px;
+    padding: 200px 0;
 
-    & > h1 {
-      max-width: 696px;
-      text-align: center;
-      padding-top: 200px;
-      padding-bottom: 280px;
-      padding-right: 452px;
-      padding-left: 452px;
+    & > div {
+      & > h1 {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.363;
+      }
     }
   }
 }
@@ -104,31 +99,3 @@
       url("../images/desktop/2x/header.jpg");
   }
 }
-
-// .main_page_top {
-//   background: $color-main_page_top-background;
-//   color: $color-main_page_top_text;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   outline: 1px solid black;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/header.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-
-//   & > div {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
-// }
