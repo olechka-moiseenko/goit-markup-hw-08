@@ -9,7 +9,7 @@
   &-logo,
   &-logo:visited {
     color: black;
-    margin-right: 93px;
+    margin-right: 88px;
     height: auto;
     display: flex;
     align-items: center;
@@ -45,10 +45,13 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     &-menu-button {
       display: none;
+    }
+    &-logo {
+      padding: 26px 0;
     }
     &-navigation {
       display: flex;
@@ -86,27 +89,25 @@
     }
     &-contacts {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: start;
+      margin-left: 34px;
+      padding: 21px 0;
     }
     &-link {
-      display: flex;
-      align-items: center;
+      align-items: left;
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
-      line-height: 1.143;
+      font-size: 12px;
+      line-height: 1.171;
       letter-spacing: 0.02em;
       color: $color-header-link;
       fill: $color-header-link;
       text-decoration: none;
-      margin-left: 50px;
-      padding: 2px;
       transition-property: color, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      padding-top: 32px;
-      padding-bottom: 32px;
 
       &:hover,
       &:focus {
@@ -114,6 +115,33 @@
         fill: $color-accent;
       }
 
+      &-icon {
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &-logo {
+      margin-right: 93px;
+      padding: 25px 0;
+    }
+    &-contacts {
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      font-size: 14px;
+      line-height: 1.143;
+      padding: 32px 2px;
       &-icon {
         width: 16px;
         height: 14px;
