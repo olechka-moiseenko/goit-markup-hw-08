@@ -17,13 +17,16 @@
     <a class="logo header-logo" href="./">
       <span class="logo-blue">Web</span>Studio
     </a>
-    <button type="button" class="header-menu-button" is-open aria-expanded="false" aria-controls="menu-container"
+    <button type="button" class="header-menu-button" aria-expanded="false" aria-controls="menu-container"
       data-menu-button>
       <svg width="40" height="40" aria-label="Переключатель мобильного меню">
         <use class="icon-close-button" href="./images/sprite.svg#close_button"></use>
         <use class="icon-menu" href="./images/sprite.svg#main_menu"></use>
       </svg>
     </button>
+    <div class="backdrop is-open" data-menu>
+      <div class="menu-container" id="menu-container">Контент меню</div>
+    </div>
     <nav class="header-navigation">
       <a class="header-navigation-item header-navigation-item-selected" href="./">Студия</a>
       <a class="header-navigation-item" href="pages/portfolio.html">Портфолио</a>
@@ -33,14 +36,12 @@
       <a class="header-link" href="mailto:info@devstudio.com">
         <svg class="header-link-icon">
           <use href="images/sprite.svg#envelope"></use>
-        </svg>
-        info@devstudio.com
+        </svg>info@devstudio.com
       </a>
       <a class="header-link" href="tel:+380961111111">
         <svg class="header-link-icon">
           <use href="images/sprite.svg#smartphone"></use>
-        </svg>
-        +380961111111
+        </svg>+380961111111
       </a>
     </address>
   </header>
@@ -425,7 +426,6 @@
         <button type="submit" class="order_dialog_send_button">Отправить</button>
       </form>
     </div>
-    <div class="menu-container" id="menu-container" data-menu>Контент меню</div>
   </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
