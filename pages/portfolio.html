@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="../css/main.min.css" rel="stylesheet" />
-  <link rel="icon" href="data:;base64,=">
 </head>
 
 <body>
@@ -21,10 +20,31 @@
     <button type="button" class="header-menu-button" is-open aria-expanded="false" aria-controls="burger-menu"
       data-menu-button>
       <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-        <use class="icon-close-button" href="../images/sprite.svg#close_button"></use>
         <use class="icon-menu" href="../images/sprite.svg#main_menu"></use>
       </svg>
     </button>
+    <div class="burger-menu is-open" id="burger-menu" data-menu>
+      <div><button type="button" class="burger-menu-close-button" data-menu-close>
+          <svg>
+            <use href="../images/sprite.svg#close_button"></use>
+          </svg>
+        </button></div>
+      <nav>
+        <a href="../">Студия</a>
+        <a class="item-selected" href="./portfolio.html">Портфолио</a>
+        <a href="./contacts.html">Контакты</a>
+      </nav>
+      <address>
+        <a class="header-link" href="tel:+380961111111">+380961111111</a>
+        <a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </address>
+      <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">LinkedIn</a></li>
+      </ul>
+    </div>
     <div class="burger-menu" id="burger-menu" data-menu>Контент меню</div>
     <nav class="header-navigation">
       <a class="header-navigation-item" href="../">Студия</a>
@@ -307,6 +327,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>
