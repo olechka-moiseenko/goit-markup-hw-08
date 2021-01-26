@@ -18,12 +18,14 @@
     <a class="logo header-logo" href="../">
       <span class="logo-blue">Web</span>Studio
     </a>
-    <button type="button" class="header-menu-button" is-open aria-expanded="false" data-menu-button>
+    <button type="button" class="header-menu-button" is-open aria-expanded="false" aria-controls="menu-container"
+      data-menu-button>
       <svg width="40" height="40" aria-label="Переключатель мобильного меню">
         <use class="icon-close-button" href="../images/sprite.svg#close_button"></use>
         <use class="icon-menu" href="../images/sprite.svg#main_menu"></use>
       </svg>
     </button>
+    <div class="menu-container" id="menu-container" data-menu>Контент меню</div>
     <nav class="header-navigation">
       <a class="header-navigation-item header-navigation-item-selected" href="../">Студия</a>
       <a class="header-navigation-item" href="./portfolio.html">Портфолио</a>
