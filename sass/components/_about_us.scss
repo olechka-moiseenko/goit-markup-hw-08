@@ -51,6 +51,12 @@
   .about_us {
     display: block;
     padding-top: 94px;
+
+    & > h2 {
+      font-size: 36px;
+      line-height: 1.166;
+    }
+
     & > ul {
       padding-top: 50px;
       & > li {
