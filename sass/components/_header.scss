@@ -3,15 +3,18 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: space-between;
+  // justify-content: space-between;
 
-  &-logo,
-  &-logo:visited {
-    color: black;
+  &-logo {
     margin-right: 88px;
     height: auto;
     display: flex;
     align-items: center;
+
+    &,
+    &:visited {
+      color: black;
+    }
   }
 
   &-contacts {
@@ -144,6 +147,7 @@
     &-contacts {
       justify-content: flex-end;
       padding: 0;
+      margin-left: auto;
     }
 
     &-link {
